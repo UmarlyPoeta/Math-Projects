@@ -1,5 +1,5 @@
 import unittest
-from det_matrix import determinant
+from det_matrix.det_matrix import determinant
 
 class TestMatrixDeterminant(unittest.TestCase):
 
