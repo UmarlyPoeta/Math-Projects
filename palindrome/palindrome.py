@@ -1,7 +1,16 @@
 
 
 def check_if_palindrome(word):
-    if word==word[::-1]:
+    while " " in word:
+        word=word.replace(" ","")
+    
+    for i in word:
+        if i in ",.!@#$%^&*":
+            word=word.replace(i,"")
+    
+    
+    modified_word=word.lower()
+    if modified_word==modified_word[::-1]:
         return True
     else:
         return False
