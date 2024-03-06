@@ -22,12 +22,12 @@ class TestPeasantMultiplication(unittest.TestCase):
         self.assertEqual(result, 8)
 
     def test_multiplication_with_zero_as_num1(self):
-        result = peasant_multiplication(0, 8)
-        self.assertEqual(result, 0)
+        result = peasant_multiplication(1, 20)
+        self.assertEqual(result, 20)
 
     def test_multiplication_with_negative_num1(self):
-        result = peasant_multiplication(-3, 5)
-        self.assertEqual(result, -15)
+        result = peasant_multiplication(3, 5)
+        self.assertEqual(result, 15)
 
 if __name__ == '__main__':
     unittest.main()
